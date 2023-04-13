@@ -130,7 +130,13 @@ CMakeFiles/13-socket.elf.dir/Core/Src/freertos.c.obj: /Users/kefei/STM32CubeIDE/
   /Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/system/arch/sys_arch.h \
   /Users/kefei/STM32CubeIDE/workspace/13-socket/LWIP/Target/ethernetif.h \
   /Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/include/lwip/tcpip.h \
-  /Users/kefei/STM32CubeIDE/workspace/13-socket/Core/Inc/tcp_socket.h
+  /Users/kefei/STM32CubeIDE/workspace/13-socket/Core/Inc/tcp_socket.h \
+  /Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h \
+  /Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/include/lwip/inet.h \
+  /Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/include/lwip/errno.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/string.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/strings.h \
+  /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/sys/string.h
 
 CMakeFiles/13-socket.elf.dir/Core/Src/gpio.c.obj: /Users/kefei/STM32CubeIDE/workspace/13-socket/Core/Src/gpio.c \
   /Users/kefei/STM32CubeIDE/workspace/13-socket/Core/Inc/gpio.h \
@@ -10329,27 +10335,11 @@ CMakeFiles/13-socket.elf.dir/Middlewares/Third_Party/LwIP/system/OS/sys_arch.c.o
 
 /Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/include/lwip/apps/fs.h:
 
-/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/strings.h:
-
-/Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/netif/ppp/pppoe.c:
-
-/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/string.h:
-
-/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/sys/_types.h:
-
-/Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
-
-/Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h:
-
 /Users/kefei/STM32CubeIDE/workspace/13-socket/Core/Src/tcp_socket.c:
 
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/sys/config.h:
 
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/sys/times.h:
-
-/Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/netif/lowpan6_common.c:
-
-/Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/include/lwip/errno.h:
 
 /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/sys/stat.h:
 
@@ -10368,6 +10358,22 @@ CMakeFiles/13-socket.elf.dir/Middlewares/Third_Party/LwIP/system/OS/sys_arch.c.o
 /Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/include/netif/ethernet.h:
 
 /Users/kefei/STM32CubeIDE/workspace/13-socket/Core/Src/gpio.c:
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/strings.h:
+
+/Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/netif/ppp/pppoe.c:
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/string.h:
+
+/Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/netif/lowpan6_common.c:
+
+/Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/include/lwip/errno.h:
+
+/usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/sys/_types.h:
+
+/Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
+
+/Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h:
 
 /Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/core/ipv6/icmp6.c:
 

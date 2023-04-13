@@ -58,6 +58,8 @@ PUTCHAR_PROTOTYPE {
 
 /* USER CODE BEGIN PV */
 
+int connected;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

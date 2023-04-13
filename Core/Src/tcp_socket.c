@@ -34,6 +34,8 @@
 u32_t nPageHits = 0;
 portCHAR PAGE_BODY[512];
 
+extern int connected;
+
 
 /**
   * @brief serve tcp connection
@@ -102,7 +104,7 @@ static void http_server_socket_thread(void *argument) {
 
 
 static void tcpecho_thread(void *arg) {
-    int sock = -1, connected;
+    int sock = -1;
     char *recv_data;
     struct sockaddr_in server_addr, client_addr;
     socklen_t sin_size;

@@ -132,6 +132,12 @@ CMakeFiles/13-socket.elf.dir/Core/Src/freertos.c.obj
  /Users/kefei/STM32CubeIDE/workspace/13-socket/LWIP/Target/ethernetif.h
  /Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/include/lwip/tcpip.h
  /Users/kefei/STM32CubeIDE/workspace/13-socket/Core/Inc/tcp_socket.h
+ /Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/include/lwip/sockets.h
+ /Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/include/lwip/inet.h
+ /Users/kefei/STM32CubeIDE/workspace/13-socket/Middlewares/Third_Party/LwIP/src/include/lwip/errno.h
+ /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/string.h
+ /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/strings.h
+ /usr/local/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/sys/string.h
 
 CMakeFiles/13-socket.elf.dir/Core/Src/gpio.c.obj
  /Users/kefei/STM32CubeIDE/workspace/13-socket/Core/Src/gpio.c
