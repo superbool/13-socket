@@ -49,6 +49,7 @@ dhcp_start(&gnetif);
 
 ## 关于LAN8720A芯片的一些简单说明
 https://blog.csdn.net/sinat_20265495/article/details/79628283
+
 1 PHY地址
     PHYAD0配置PHY地址，如果不接(内部下拉)，则对应SMI地址是0
 
