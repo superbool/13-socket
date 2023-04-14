@@ -1,4 +1,0 @@
-../Core/Src/tcp_socket.c:43:6:http_server_serve	1528	static
-../Core/Src/tcp_socket.c:63:13:http_server_socket_thread	72	static
-../Core/Src/tcp_socket.c:105:1:tcpecho_thread	88	static
-../Core/Src/tcp_socket.c:176:6:tcpecho_init	16	static
