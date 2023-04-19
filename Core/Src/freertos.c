@@ -60,6 +60,8 @@ const osThreadAttr_t defaultTask_attributes = {
         .priority = (osPriority_t) osPriorityNormal,
 };
 
+char recv_data[12] = "helloworld\n";
+
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
 
@@ -122,7 +124,7 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument) {
     /* init code for LWIP */
     MX_LWIP_Init();
-    char recv_data[12] = "helloworld\n";
+
     /* USER CODE BEGIN StartDefaultTask */
     /* Infinite loop */
     for (;;) {

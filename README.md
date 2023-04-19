@@ -61,3 +61,9 @@ https://blog.csdn.net/sinat_20265495/article/details/79628283
 3 内部1.2v电压配置
     LED1/REGOFF接地使用内部1.2v稳压器
 
+
+## 实际通信方式
+
+1 采用光纤模块直连单片机和电脑
+
+2 单片机和电脑均设置为静态ip,注意ip尾缀不同，子网掩码和Gateway一致
