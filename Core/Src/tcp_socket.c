@@ -92,7 +92,8 @@ static void http_server_socket_thread(void *argument) {
 
     for (;;) {
         newconn = accept(sock, (struct sockaddr *) &remotehost, (socklen_t *) &size);
-        printf("my new client connected from (%s, %d)\n", inet_ntoa(remotehost.sin_addr), ntohs(remotehost.sin_port));
+        printf("my new client connected from (%s, %d) %d\n", inet_ntoa(remotehost.sin_addr), ntohs(remotehost.sin_port),
+               newconn);
         http_server_serve(newconn);
         osDelay(1);
     }
@@ -132,6 +133,7 @@ static void tcpecho_thread(void *arg) {
             }
         }
         HAL_Delay(100);
+
     } while (sock < 0);
     sin_size = sizeof(client_addr);
     while (1) {
@@ -161,11 +163,10 @@ static void tcpecho_thread(void *arg) {
         printf("closesocket %d\n", connected);
         connected = -1;
     }
-    __exit:
     if (sock >= 0) closesocket(sock);
     if (recv_data) free(recv_data);
 }
 
 void tcpecho_init(void) {
-    sys_thread_new("tcpecho_thread", tcpecho_thread, NULL, 2048, osPriorityNormal);
+    sys_thread_new("tcpecho_thread", http_server_socket_thread, NULL, 2048, osPriorityNormal);
 }
