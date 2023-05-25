@@ -10,21 +10,23 @@ stm32 lwip相关记录
 正点原子stm42f4开发版上PHY芯片LAN8720A与cubeMX上芯片LAN8742A功能一致，但需要注意的点： 
 ## 1 cubeMX自动生成的PHY引脚跟实际的开发板引脚有不同，需要手动调整下，开发板引脚：
 ```
-    PC1     ------> ETH_MDC
     PA1     ------> ETH_REF_CLK
     PA2     ------> ETH_MDIO
     PA7     ------> ETH_CRS_DV
+    PC1     ------> ETH_MDC
     PC4     ------> ETH_RXD0
     PC5     ------> ETH_RXD1
     PG11     ------> ETH_TX_EN
     PG13     ------> ETH_TXD0
     PG14     ------> ETH_TXD1
+    
+    PE2 ------> ETH_RESET
+需要手动添加RESET引脚，对应接芯片的GPIO-PE2    
 ```
  
 
 ## 2 注意手动添加LAN8720A的RESET引脚以及相关的初始化reset代码，cubeMX生成的代码不含RESET相关引脚及代码（如果不加reset，芯片无法正常工作）
-RESET引脚对接芯片的GPIO-PE2
-ethernetif.c -> HAL_ETH_MspInit函数添加：
+ethernetif.c -> HAL_ETH_MspInit 函数添加：
 ```
   HAL_GPIO_WritePin(ETH_RESET_GPIO_Port,ETH_RESET_Pin,GPIO_PIN_RESET);
   HAL_Delay(100);
